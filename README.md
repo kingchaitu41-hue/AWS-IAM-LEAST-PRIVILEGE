@@ -55,15 +55,34 @@ Rather than assigning permissions broadly, this project models how a real compan
 
 ## Screenshots
 
+**Manny – Billing Access Denied**
+
 ![Manny Billing Denied](Images/Manny_billing_access.png)
 
-![Manny EC2 Billing Access](Images/Manny_ec2_billing.png)
+<br>
+
+**Manny – EC2 Access**
+
+![Manny EC2 Access](Images/Manny_ec2_billing.png)
+
+<br>
+
+**Mike – Billing Access**
 
 ![Mike Billing Access](Images/Mike_billing_access.png)
 
-![Mike Ec2 Access](Images/Mike_ec2_access.png)
+<br>
+
+**Mike – EC2 Access Denied**
+
+![Mike EC2 Access](Images/Mike_ec2_access.png)
+
+<br>
+
+**Mike – S3 Access Denied**
 
 ![Mike S3 Access](Images/Mike_S3_access.png)
+
 ---
 
 ## Key Takeaways
