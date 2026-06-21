@@ -98,8 +98,8 @@ Rather than assigning permissions broadly, this project models how a real compan
 
 Overall it was a fun little project — built and tested entirely from a cafe. Sometimes all you need is a laptop and a coffee !
 
-<br
->
+<br>
+
 **A good weekend !**
 
 ![Cafe](Images/Cafe.jpeg)
