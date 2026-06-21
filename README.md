@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/status-complete-brightgreen?style=flat-square)
 ![Security](https://img.shields.io/badge/security-least%20privilege-blue?style=flat-square)
 
-A hands-on implementation of the Principle of Least Privilege (PoLP) for a simulated company, TechCorp Enterprises, using AWS IAM. Each user was given exactly the permissions their role requires — nothing more.
+In this project, I have implemented the Principle of Least Privilege (PoLP) for a simulated company, TechCorp Enterprises, using AWS IAM. The goal was to make sure each user has exactly the permissions their role requires — nothing more, nothing less.
 
 ---
 
@@ -55,13 +55,26 @@ Rather than assigning permissions broadly, this project models how a real compan
 
 ## Screenshots
 
-*Add Access Denied screenshots here.*
+![Manny Billing Denied](Images/Manny_billing_access.png)
 
+![Manny EC2 Billing Access](Images/Manny_ec2_billing.png)
+
+![Mike Billing Access](Images/Mike_billing_access.png)
+
+![Mike Ec2 Access](Images/Mike_ec2_access.png)
+
+![Mike S3 Access](Images/Mike_S3_access.png)
 ---
 
 ## Key Takeaways
 
-- Group-based permissions scale well. Adding a new developer means one group assignment, not a manual policy review.
-- Least privilege limits the blast radius of a compromised account. Manny can't touch billing; Mike can't touch infrastructure.
-- MFA on root is the most important single control in an AWS account.
-- Attaching policies to users directly is a maintenance problem waiting to happen.
+1. Group-based permissions scale well. Adding a new developer means one group assignment, not a manual policy review.
+
+2. Least privilege helps contain the spread of a compromised account. Manny can't touch billing; Mike can't touch infrastructure — even if either of them is compromised, the attacker is locked to that user's domain and can't move laterally. This directly aligns with the NIST SP 800-61 Containment framework, which identifies limiting the blast radius as a primary response action to stop an active breach from spreading to the rest of the network. In practice, IAM least privilege acts as a built-in containment layer before an incident even occurs.
+
+3. MFA on root is the most important single control in an AWS account.
+
+4. Attaching policies to users directly is a maintenance problem waiting to happen.
+
+
+Overall it was a fun little project — built and tested entirely from a cafe. Sometimes all you need is a laptop and a coffee !
